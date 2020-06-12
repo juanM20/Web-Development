@@ -1,0 +1,96 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+.main {
+
+    display: grid;
+    padding: 2em; 
+    background-color: #000000;
+    grid-row-gap: 2em;
+}
+
+.group1 {
+
+    display: grid;
+    grid-template-rows: 33% 66%;
+    justify-items: center;
+    background-color: #ffffff;
+    padding: 1em;
+}
+
+h1 {
+    
+    color: #242424;
+    grid-row: 1/2;
+    padding: 1em;
+    font-size: 47px;
+}
+
+.img-div {
+    
+    display: grid;
+    grid-row: 2/3;
+    grid-template-rows: 2fr 1fr;
+    justify-items: center;
+    justify-self: end;
+    font-size: 23px;
+    line-height: 1.5;
+    padding-bottom: 1em;
+}
+
+.img-div img {
+
+    max-width: 100%;
+}
+
+.img-div .img-caption {
+
+    padding: 10px 50px 10px 50px;
+}
+
+.tribute-info {
+
+    padding: 30px 100px 30px 100px;
+    align-self: center;
+    text-align: justify;
+    background-color: #ffffff;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+footer {
+
+    color: #ffffff;
+    padding: 20px 50px 20px 50px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        padding: 15px;
+    }
+    
+    .img-div {
+    
+        grid-template-rows: 2fr 1fr;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .img-div .img-caption {
+        
+        padding: 15px;
+    }
+
+    .tribute-info {
+
+        padding: 25px;
+        font-size: 15px;
+    }
+}

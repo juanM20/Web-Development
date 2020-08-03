@@ -11,8 +11,8 @@
 
     <div class="container">
         <header class="header">
-            <h1 id="title"></h1>
-            <p id="description"></p>
+            <h1 id="title">My Survey Form</h1>
+            <p id="description">Please fill this form for personal purposes</p>
         </header>
         <form action="" id="survey-form">
             <div class="form-group">
@@ -24,7 +24,7 @@
                 <input type="email" id="email" class="form-control" placeholder="example@gmail.com" required>
             </div>
             <div class="form-group">
-                <label for="number" id="age-label">Age</label>
+                <label for="number" id="number-label">Age</label>
                 <input type="number" id="number" class="form-control" min="12" max="99" step="1" placeholder="Age">
             </div>
             <div class="form-group">
@@ -61,7 +61,7 @@
             </div>
             <div class="form-group">
                 <p>Any comments or suggestions?</p>
-                <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+                <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..." rows="8"></textarea>
             </div>
             <div class="form-group">
                 <button type="submit" id="submit" class="submit-button">Submit</button>
@@ -70,5 +70,6 @@
 
     </div>
     
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

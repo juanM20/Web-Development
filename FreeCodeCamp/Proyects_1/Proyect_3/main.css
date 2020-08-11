@@ -1,6 +1,8 @@
 body {
     background-color: #1f1f1f;
     font-family: 'Sriracha', cursive;
+    padding: 0;
+    margin: 0;
 }
 
 header nav {
@@ -9,12 +11,39 @@ header nav {
     flex-direction: row;
     justify-content: space-between;
 
+    position: fixed;
+    top: 0;
     border-bottom: 1px solid black;
+    width: 97%;
+    padding: 20px;
+    background-color: #000000;
 }
+
+header .background-image {
+
+    z-index: -1;
+}
+
+header .background-image img {
+
+    width: 100%;
+    height: auto;
+}
+@supports(object-fit: cover) {
+    
+    header .background-image img {
+
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
 
 header nav #header-img {
 
     align-self: flex-start;
+    max-width: 120px;
 }
 
 header nav #nav-bar {

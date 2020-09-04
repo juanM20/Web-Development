@@ -223,3 +223,42 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+
+    header nav #header-img, header nav ul {
+        display: none;
+    }
+
+    header nav #header-menu-icon {
+
+        display: block;
+        font-size: 82px;
+        color:#ffffff;
+    }
+
+    header nav {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        height: 700px;
+        padding: 15px;
+    }
+
+    header nav ul li a {
+
+        font-size: 45px;
+    }
+
+
+
+
+}

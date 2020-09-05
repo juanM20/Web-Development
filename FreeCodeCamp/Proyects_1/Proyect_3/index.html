@@ -13,13 +13,13 @@
     <div class="main">
 
         <header id="header">
-            <div class="background-image">
-               <img src="/static/Portada.jpg" alt="background-img">
-            </div>
+            <video autoplay muted loop id="background-image" class="background-image">
+                <source src="/static/video-portada.mp4" type="video/mp4">
+            </video>
             <nav id="nav-bar">
-                <img src="/static/Logo.png" alt="logo" id="header-img">
+                <a href="#background-image"><img src="/static/Logo.png" alt="logo" id="header-img"></a>
                 <i class="material-icons" id="header-menu-icon">&#xe5d2;</i>
-                <ul>
+                <ul id="menu-list">
                     <li class="nav-link"><a href="#games-section">Games</a></li>
                     <li class="nav-link"><a href="#About">About</a></li>
                     <li class="nav-link"><a href="#Contact">Contact</a></li>
@@ -120,8 +120,6 @@
                 </form>
     
             </div>
-    
-
         </div>
 
         
@@ -146,6 +144,7 @@
         </footer>
 
     </div>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
